@@ -2,7 +2,7 @@
 import express from 'express'
 import { Request, Response, NextFunction } from 'express'
 
-import router from "./router/router"
+import first from "./router/router"
 
 
 
@@ -14,7 +14,7 @@ app.get('/', (req: Request, res: Response, next: NextFunction) => {
 })
 
 
-app.use("/router", router)
+app.use('/first', first)
 
 
 app.listen(port, () => {
